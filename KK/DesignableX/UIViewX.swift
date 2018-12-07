@@ -25,6 +25,13 @@ class UIViewX: UIView {
         }
     }
     
+    @IBInspectable var thirdColor: UIColor = UIColor.white {
+        didSet {
+            updateView()
+        }
+    }
+    
+    
     @IBInspectable var horizontalGradient: Bool = false {
         didSet {
             updateView()

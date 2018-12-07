@@ -14,8 +14,6 @@
 		F7E1A92021B90EB3008B88A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E1A91E21B90EB3008B88A6 /* LaunchScreen.storyboard */; };
 		F7E1A92C21B92257008B88A6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1A92B21B92257008B88A6 /* TableViewController.swift */; };
 		F7E5F39921B96D6100B04E39 /* DesignableX in Resources */ = {isa = PBXBuildFile; fileRef = F7E5F39821B96D6100B04E39 /* DesignableX */; };
-		F7E5F3A221B976FD00B04E39 /* NavigtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E5F3A121B976FD00B04E39 /* NavigtionViewController.swift */; };
-		F7E5F3A421B9782800B04E39 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E5F3A321B9782800B04E39 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		F7E1A92121B90EB3008B88A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7E1A92B21B92257008B88A6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F7E5F39821B96D6100B04E39 /* DesignableX */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DesignableX; sourceTree = "<group>"; };
-		F7E5F3A121B976FD00B04E39 /* NavigtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigtionViewController.swift; sourceTree = "<group>"; };
-		F7E5F3A321B9782800B04E39 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +73,6 @@
 		F7E1A92721B92194008B88A6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F7E5F3A321B9782800B04E39 /* FirstView.swift */,
 				F7E1A91721B90EB1008B88A6 /* InitialViewController.swift */,
 				F7E1A92B21B92257008B88A6 /* TableViewController.swift */,
 			);
@@ -87,7 +82,6 @@
 		F7E5F3A521B9792C00B04E39 /* NavigationViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F7E5F3A121B976FD00B04E39 /* NavigtionViewController.swift */,
 			);
 			path = NavigationViewControllers;
 			sourceTree = "<group>";
@@ -165,9 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E1A91821B90EB1008B88A6 /* InitialViewController.swift in Sources */,
-				F7E5F3A421B9782800B04E39 /* FirstView.swift in Sources */,
 				F7E1A91621B90EB1008B88A6 /* AppDelegate.swift in Sources */,
-				F7E5F3A221B976FD00B04E39 /* NavigtionViewController.swift in Sources */,
 				F7E1A92C21B92257008B88A6 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
