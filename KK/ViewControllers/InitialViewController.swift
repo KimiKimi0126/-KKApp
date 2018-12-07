@@ -10,6 +10,7 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
+    var person = "Kiminori"
     
     
     
