@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7847FAD21BC0BBD0095FE5A /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7847FAC21BC0BBD0095FE5A /* ViewControllerTableViewCell.swift */; };
 		F7E1A91621B90EB1008B88A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1A91521B90EB1008B88A6 /* AppDelegate.swift */; };
 		F7E1A91821B90EB1008B88A6 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1A91721B90EB1008B88A6 /* InitialViewController.swift */; };
 		F7E1A91B21B90EB1008B88A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E1A91921B90EB1008B88A6 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7847FAC21BC0BBD0095FE5A /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		F7E1A91221B90EB1008B88A6 /* KK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E1A91521B90EB1008B88A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7E1A91721B90EB1008B88A6 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7847FAE21BC0CA50095FE5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7847FAC21BC0BBD0095FE5A /* ViewControllerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F7E1A90921B90EB1008B88A6 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 			children = (
 				F7E1A91521B90EB1008B88A6 /* AppDelegate.swift */,
 				F7E1A91921B90EB1008B88A6 /* Main.storyboard */,
+				F7847FAE21BC0CA50095FE5A /* Cells */,
 				F7E5F3A521B9792C00B04E39 /* NavigationViewControllers */,
 				F7E1A92721B92194008B88A6 /* ViewControllers */,
 				F7E1A91E21B90EB3008B88A6 /* LaunchScreen.storyboard */,
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E1A91821B90EB1008B88A6 /* InitialViewController.swift in Sources */,
+				F7847FAD21BC0BBD0095FE5A /* ViewControllerTableViewCell.swift in Sources */,
 				F7E1A91621B90EB1008B88A6 /* AppDelegate.swift in Sources */,
 				F7E1A92C21B92257008B88A6 /* TableViewController.swift in Sources */,
 			);

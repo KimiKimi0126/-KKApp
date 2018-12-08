@@ -10,37 +10,72 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    
+    var itemArray = [Item]()
+    var currentItemArray = [Item]()
+    
+    
+    class Item {
+        let name: String
+        let nameTwo: String
+        let nameThree: String
+        let image: String
+        init(name: String, nameTwo: String, nameThree: String, image: String) {
+            self.name = name
+            self.nameTwo = nameTwo
+            self.nameThree = nameThree
+            self.image = image
+        }
+    }
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        setUpItems()
+       
+      
     }
-
+    
+    private func setUpItems() {
+        itemArray.append(Item(name: "ダイヤテックス パイオランクロス 養生用テープ 緑 50mm×25M 5巻パック Y-09-GR [マスキングテープ]", nameTwo: "ダイヤテックス", nameThree: "¥ 240", image: "61yuwI3XbwL._SL1000_"))
+        itemArray.append(Item(name: "ダイヤテックス パイオランクロス 養生用テープ 緑 50mm×25M 5巻パック Y-09-GR [マスキングテープ]", nameTwo: "ダイヤテックス", nameThree: "¥ 240", image: "item02-7"))
+        itemArray.append(Item(name: "ダイヤテックス パイオランクロス 養生用テープ 緑 50mm×25M 5巻パック Y-09-GR [マスキングテープ]", nameTwo: "ダイヤテックス", nameThree: "¥ 240", image: "tape2"))
+        itemArray.append(Item(name: "プラダンシート", nameTwo: "佐藤ケミカル", nameThree: "¥ 190", image: "61tN6pGAWQL._SL1500_"))
+        itemArray.append(Item(name: "セメダイン JISシリコーンシーラント 8060 プロ 330ml", nameTwo: "セメダイン", nameThree: "¥ 240", image: "8921740_3L1"))
+        
+        currentItemArray = itemArray
+    }
+    
+   
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return currentItemArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ViewControllerTableViewCell else { return UITableViewCell() }
+        cell.labelOne.text = currentItemArray[indexPath.row].name
+        cell.labelTwo.text = currentItemArray[indexPath.row].nameTwo
+        cell.labelThree.text = currentItemArray[indexPath.row].nameThree
+        cell.labelFour.text = "即日"
+        
+        cell.myImageView.image = UIImage(named: currentItemArray[indexPath.row].image)
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 142
+    }
 
     /*
     // Override to support conditional editing of the table view.
