@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,19 +15,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k.k" translatesAutoresizingMaskIntoConstraints="NO" id="Rpl-ag-fxo">
-                                <rect key="frame" x="137" y="378" width="140" height="140"/>
+                                <rect key="frame" x="117.66666666666669" y="336" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rpl-ag-fxo" secondAttribute="height" multiplier="1:1" id="7cg-xu-vzp"/>
+                                    <constraint firstAttribute="width" constant="140" id="iE2-jj-Ywk"/>
+                                    <constraint firstAttribute="height" constant="140" id="zeB-96-mI9"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.56408900439999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Rpl-ag-fxo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="334" id="Gjk-T6-3aM"/>
-                            <constraint firstItem="Rpl-ag-fxo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="J4p-HE-n2O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rpl-ag-fxo" secondAttribute="bottom" constant="344" id="cQW-G1-cLI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rpl-ag-fxo" secondAttribute="trailing" constant="137" id="vxY-0f-BKu"/>
+                            <constraint firstItem="Rpl-ag-fxo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HNo-zU-9G3"/>
+                            <constraint firstItem="Rpl-ag-fxo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gLU-pv-ZTh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
